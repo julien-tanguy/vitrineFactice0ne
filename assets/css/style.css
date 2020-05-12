@@ -1,0 +1,250 @@
+.animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.animated-icon1 span {
+    background: #000000;
+}
+.animated-icon2 span {
+    background: #000000;
+}
+.animated-icon3 span {
+    background: #000000;
+}
+.animated-icon1 span:nth-child(1) {
+    top: 0px;
+}
+.animated-icon1 span:nth-child(2) {
+    top: 10px;
+}
+.animated-icon1 span:nth-child(3) {
+    top: 20px;
+}
+.animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+.animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+    font-family: 'Questrial', sans-serif;
+}
+#navbar {
+    padding: 0;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 99;
+}
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    color: #000000;
+}
+.navbar a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #000000;
+    font-size: 17px;
+    text-decoration:none;
+}
+#button_connect {
+    background-color: #000000;
+    height: 100%;
+    border: none;
+    border-radius: 0%;
+}
+#button_connect a {
+    color: #ffffff;
+}
+.navbar a:hover {
+    color: #0C8A63;
+}
+#button_connect:hover, .button_body:hover{
+    background-color: #0C8A63;
+}
+/*--------------------------------------------------------------------------------SECTION1-----------------------------------------------------------------------------------------------*/
+.button_body {
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
+}
+.button_body a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.margin-nav {
+    margin-top: 36px;
+}
+.div-type {
+    height: 829px;
+}
+#section_1 h1 {
+    font-size: 34px;
+    margin-top: 50px;
+}
+#section_1 p, .button_body {
+    margin: 30px 60px 0px 60px;
+}
+#section_1 img {
+    width: 350px;
+    margin-top: 300px;
+}
+/*--------------------------------------------------------------------------------SECTION2-----------------------------------------------------------------------------------------------*/
+.desktopDiv {
+    background-color: #000000;
+    height: 829px;
+}
+.desktopDiv img, .imgDiv4 img {
+    width: 350px;
+    margin-top: 350px;
+}
+.section_2Div {
+    height: 829px;
+    background-color: #FAFAFA;
+}
+#section_2 h1 {
+    font-size: 34px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#section_2 p, #section_2 li, .section_4Div p, .section_4Div a {
+    margin: 3px 40px 0px 40px;
+}
+@media screen and (min-width: 992px) {
+    #navbar {
+        height: 69px;
+        position: static;  
+    }
+    .margin-nav {
+        margin-top: 69px;
+    }
+    .margin-nav {
+        margin-top: 0;
+    }
+    #section_1 h1 {
+        margin-top: 120px;
+        margin-left: 90px;
+    }
+    #section_1 p, .button_body {
+        margin: 30px 60px 0px 60px;
+    }
+    #section_1 img, .desktopDiv img, .imgDiv4 img {
+        width: 450px;
+    }
+    #section_2 h1 {
+        font-size: 38px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    #section_2 p, #section_2 li,.section_4Div p {
+        font-size: 19px;
+    }
+    #section_2 p {
+        margin-bottom: 40px;
+    }
+}
+/*--------------------------------------------------------------------------------SECTION3-----------------------------------------------------------------------------------------------*/
+#section_3 {
+    height: 370px;
+    background-color: #ffffff;
+}
+#section_3 h2 {
+    margin-top: 70px;
+    font-size: 27px;
+}
+#section_3 .btn-group-justified {
+    margin-top: 50px;
+}
+#section_3 button {
+    background-color: #ffffff;
+    width: 150px;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 3px;
+}
+#section_3 button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.section_4Div {
+    height: 829px;
+}
+.imgDiv4 {
+    height: 829px;
+    background-color: #F2F2F2;
+}
+.section_4Div h1 {
+    border-top: 1px solid #000000;
+    padding-top: 55px;
+    text-align: center;
+}
+.section_4Div h3 {
+    font-size: 15px;
+    color: #7c7a7a;
+    text-align: center;
+}
+.section_4Div p {
+    margin-top: 60px;
+}
+.section_4Div a {
+    text-decoration: underline;
+    color: #000000;
+    margin-top: 20px;
+   font-size: 20px;
+}
+.section_4Div a:hover {
+    color: #0C8A63;
+    text-decoration: underline;
+}
+footer {
+    height: 100px;
+    background-color: #F2F2F2;
+}
+footer p {
+    padding-top: 50px;
+    font-size: 17px;
+    text-align: center;
+    color: #7c7a7a;
+}
